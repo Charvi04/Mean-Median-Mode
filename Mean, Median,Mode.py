@@ -17,7 +17,7 @@ for i in newData:
     total += i
 
 mean = total/len(newData)
-print("Mean : ",mean)
+print("Mean of Data : ",mean)
 
 newData.sort()
 n = len(newData)
@@ -29,7 +29,7 @@ if(n%2 == 0):
 else:
     median = newData[n//2]
 
-print("Median : ",median)
+print("Median of Data : ",median)
 
 data = Counter(newData)
 dataRange = {"50-60":0,"60-70":0,"70-80":0}
@@ -50,4 +50,4 @@ for r,o in dataRange.items():
 
 mode = float((mr[0]+mr[1])/2)
 
-print("Mode : ",mode)
+print("Mode of Data : ",mode)
